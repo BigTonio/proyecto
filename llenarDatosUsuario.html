@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLENAR DATOS USUARIO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <link rel="stylesheet" href="diseñoLlenarDaTr.css">
+</head>
+<body>
+        <script>
+           $(function name(params)
+           {
+               $("#formulario").validate({
+                rules:{
+                    nombres:{
+                        required: true
+                    },
+                    descripcion:{
+                        required: true
+                    },
+                    Edad:{
+                        required: true
+                    },
+                    acarrera:{
+                        required: true
+                    }
+
+                    
+                },
+                    messages:{
+                        nombres:{
+                        required:'ingrese algún nombre'
+                        
+                    },
+                    descripcion:{
+                        required:'ingrese una descripcion',
+                        minlength:"largo insuficiente",
+                        maxlength:"largo insuficiente"
+                    },
+                    Edad:{
+                        required:'ingrese una edad'     
+                    },
+                    acarrera:{
+                        required:"ingrese una carrera"
+                    }
+                    }
+               })  
+           }); 
+        </script>
+        <div id="divIMG">
+        <img src="IMG/GRUPO CERO.PNG" alt="logo_empresa" width="650">
+      </div>
+    <form id="formulario"action="#" id="formulario">
+        <label for="">Nombre</label><br>
+        <input type="text" name="nombres" id="nombres" placeholder="xxxxx xxxxx"><br>
+        <br>
+        <label for="">Descripcion</label><br>
+        <input type="text" name="descripcion" id="descripcion"><br>
+        <br>
+        <label for="">Edad</label><br>
+        <input type="text" name="edad" id="edad" > <br>
+        <br>
+        <label for="">Años de carrera</label><br>
+        <input type="text" name="acarrera" id="acarrera" > <br>
+
+        <div><a href="./crearCuenta.html"><button id="datos">Confirmar Datos</button></a></div>
+
+
+
+    </form>
+    
+</body>
+</html>
